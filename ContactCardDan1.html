@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="utf-8">
+            <title> Contactcard </title>
+            <meta name ="Contactcard" content="Contactcard">
+            <link rel="stylesheet" href="ContactCardDan1style.css" type="text/css">
+            <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+            <script type="text/javascript">
+                    $(document).ready(function(){
+
+                        $("#adduser").click(function(){
+                            var fname = $("#firstname").val();
+                            var lname = $("#lastname").val();
+                            var descrip = $("#description").val();
+                            $("#addedcontacts").append("<div class='info'><div class='notefront'><h2>" + fname + " " + lname + "</h2><p>See Description</p></div><div class='noteback'><p>" + descrip + "</p></div></div>");
+
+                            return false;
+                        });
+
+                        
+                        $(document).on("click", ".info", function(){
+                            $(this).children().toggle();
+                        });
+
+                    });
+                    
+
+            </script>
+      </head>           
+      <body>
+            <div id="wrapper">
+                    <div class="formblock">
+
+                        <form>
+                                <label>First Name:</label>
+                                <input type="text" id="firstname" name="First Name">
+                        
+                                <label>Last Name:</label>
+                                <input type="text" id="lastname" name="Last Name">
+                        
+                                <label>Description:</label>
+                                <textarea id="description" name="Description"></textarea>
+                        
+                                <button id="adduser">Add User</button>
+                        </form>
+                    </div>
+                
+                    <div id="addedcontacts">
+                        <h3> Added Contacts </h3>
+                    </div>
+            </div>
+ 
+      </body>
+</html>

@@ -1,0 +1,80 @@
+
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-around;
+    background-color:white;
+
+}
+
+.noteback{
+    display: none;
+}
+
+.formblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    width: 270px; 
+    height: 350px;
+    padding-left: 5px;
+    margin-top: 35px;
+}
+
+.info {
+    width: 270px;
+    height: 120px;
+    overflow-x: scroll;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(183, 177, 189);
+    padding-top: 10px;
+    margin-top: 15px; 
+    font-family: arial;
+}
+
+.info h2{
+    margin-top: 45px;
+}
+
+.info p{
+    margin-top:10px;
+
+}
+
+#addedcontacts{
+    width: 25% ;
+    margin-top: 15px;
+    font-family: arial;
+    font-size: 1.0em;
+}
+
+label, input {
+    display: inline-block;
+    font-family: arial;
+}
+
+textarea{
+    display: block;
+    width: 240px;
+    height: 100px;
+    margin-left: 15px;
+}
+
+label {
+    margin-bottom: 15px;
+}
+
+button{
+    display: block;
+    margin-top: 15px;
+    width: 80px;
+    margin-left: 15px;
+}
